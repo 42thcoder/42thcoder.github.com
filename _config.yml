@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://42thcoder.github.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: 不可知之地
+subtitle: 一些思绪，一点经验
+author: 子不语
 simple_search: http://google.com/search
-description:
+description: 什么都懂一点的伪Geek
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -58,7 +58,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: 42thcoder
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
