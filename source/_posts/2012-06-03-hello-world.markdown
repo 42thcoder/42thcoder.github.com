@@ -18,6 +18,7 @@ categories:
 ---
 
 1. 我的第一篇博文
+进行一些测试，熟悉一下MarkDown的语法
 
 1.1. 先来看段视频：
 {% video http://s3.imathis.com/video/zero-to-fancy-buttons.mp4 640 320 http://s3.imathis.com/video/zero-to-fancy-buttons.png %}
