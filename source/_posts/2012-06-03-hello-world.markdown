@@ -47,3 +47,10 @@ Surround your paragraph with the pull quote tags. Then when you come to
 the text you want to pull, {" surround it like this "} and that's all there is to it.
 {% endpullquote %}
 
+最后试试图片
+
+{% img http://farm8.staticflickr.com/7220/7325502022_766512ef80.jpg %} 
+
+{% img legt http://farm8.staticflickr.com/7220/7325502022_766512ef80.jpg '123' %} 
+{% img right http://farm8.staticflickr.com/7220/7325502022_766512ef80.jpg '456' %} 
+
