@@ -34,6 +34,7 @@ var bar = baz || createBar();
 
 <!-- more -->
 
+-----------------
 #### 何时为真&&何时为假
 ``` js 被判断为true的值
 '0'; //字符串0。
@@ -51,6 +52,8 @@ null;
 undefined;  // 注意 -- undefined 可以被重新定义!
 ```
 
+
+-------------------
 #### 把字符串转换为数字
 ``` js
 var foo = 1;
@@ -62,6 +65,7 @@ console.log(foo + Number(bar));
 console.log(foo + +bar);
 ```
 
+-------------
 #### 比较运算符
 
 ``` js
@@ -75,6 +79,7 @@ foo === parseInt(baz);	//	返回真
 bim > baz;	//返回真
 ```
 
+------------
 #### 三元运算符
 
 ``` js
@@ -83,6 +88,7 @@ bim > baz;	//返回真
 var foo = bar ? 1 : 0
 ```
 
+--------------
 #### switch语句
 
 switch语句支持值为字符串。在JavaScript中很少使用switch语句，通过创建对象来实现更好。我没懂为什么更好，搜到挺有意思的文章，[“使用面向对象技术取代switch和if”](http://zhangjunhd.blog.51cto.com/113473/68070/)，改天看看，mark。
@@ -109,6 +115,7 @@ if (stuffToDo[foo]) {
 }
 ```
 
+--------
 #### 数组
 
 ``` js
@@ -125,6 +132,8 @@ var myArray = [ 'h', 'e', 'l', 'l', 'o' ];
 var myString = myArray.join('');   // 'hello'
 var mySplit = myString.split('');  // [ 'h', 'e', 'l', 'l', 'o' ]
 ```
+
+--------
 #### 函数
 
 ###### 自执行匿名函数
@@ -162,6 +171,8 @@ var myOtherFn = function() {
 
 myFn(myOtherFn);   // logs 'hello world'
 ```
+
+----------
 #### 作用域
 
-	声明变量时一定要加var关键字。否则，该变量被当做全局变量，即使该声明发生在函数内部
+声明变量时一定要加var关键字。否则，该变量被当做全局变量，即使该声明发生在函数内部
