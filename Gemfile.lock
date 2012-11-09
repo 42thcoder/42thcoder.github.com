@@ -1,5 +1,5 @@
 GEM
-  remote: http://ruby.taobao.org/
+  remote: http://mirrors.4.tuna.tsinghua.edu.cn/rubygems/
   specs:
     RedCloth (4.2.9)
     albino (1.3.3)
