@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>不可知之地</title>
+	<title>jQuery学习笔记之jQuery基础篇 - 不可知之地</title>
 	<meta name="author" content="子不语">
 
 	
@@ -49,13 +49,9 @@
 
 </header>
 	
-	<div id="content" class="inner">
-
-
-    <article class="post">
-	<h1 class="title"><a href="/blog/2012/06/06/jqueryxue-xi-bi-ji-zhi-jqueryji-chu-pian/">jQuery学习笔记之jQuery基础篇</a></h1>
-	<div class="entry-content">
-		<p>jQuery是目前最实用的JavaScript库，号称前端开发的利器，能大大简化开发，很有必要学习。这篇文章，是我通过阅读《<a href="http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html">jQuery基本原理</a>》来了解jQuery时所做的读书笔记：只记重点，概括思想，以作备忘。</p>
+	<div id="content" class="inner"><article class="post">
+	<h1 class="title">jQuery学习笔记之jQuery基础篇</h1>
+	<div class="entry-content"><p>jQuery是目前最实用的JavaScript库，号称前端开发的利器，能大大简化开发，很有必要学习。这篇文章，是我通过阅读《<a href="http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html">jQuery基本原理</a>》来了解jQuery时所做的读书笔记：只记重点，概括思想，以作备忘。</p>
 
 <p>部分内容参考了阮一峰先生的博文<a href="http://www.ruanyifeng.com/blog/2011/07/jquery_fundamentals.html">《jQuery设计思想》</a>。如果想了解JavaScript的一些基础知识，请参看我的上一篇读书笔记<a href="http://oncoding.in/blog/2012/06/05/jqueryxue-xi-bi-ji-zhi-javascriptji-chu-yu-fa-pian/">《jQuery学习笔记之JavaScript基础语法篇》</a></p>
 
@@ -668,10 +664,7 @@
 </pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">).</span><span class="nx">unbind</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
-
-		
-		
-	</div>
+</div>
 
 
 <div class="meta">
@@ -696,126 +689,26 @@
 
 </div>
 	
-		<span class="comments"><a href="/blog/2012/06/06/jqueryxue-xi-bi-ji-zhi-jqueryji-chu-pian//index.html#disqus_thread">Comments</a></span>
+		<span class="comments"><a href="/blog/2012/06/06/jqueryxue-xi-bi-ji-zhi-jqueryji-chu-pian/#disqus_thread">Comments</a></span>
 	
 </div></article>
-
-
-    <article class="post">
-	<h1 class="title"><a href="/blog/2012/06/05/jqueryxue-xi-bi-ji-zhi-javascriptji-chu-yu-fa-pian/">jQuery学习笔记之JavaScript基础语法篇</a></h1>
-	<div class="entry-content">
-		<p>jQuery是目前最实用的JavaScript库，号称前端开发的利器，能大大简化开发，很有必要学习。这篇文章，是我通过阅读《<a href="http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html">jQuery基本原理</a>》来了解jQuery时所做的读书笔记：只记重点，概括思想，以作备忘。</p>
-
-<h2>JavaScript基础语法</h2>
-
-<p>这一部分主要记录JavaScript的<em>非常见</em>基本语法，适合看完W3Shool中JavaScript简介的人。</p>
-
-<h4>逻辑表达式</h4>
-
-<p>或运算符（ ||） 返回第一个值为真的操作数, 如果两个操作数的值都为假，则返回最后一个操作数。</p>
-
-<p>与运算符（ &amp;&amp;） 返回第一个值为假的运算符，如果两个操作数的值都为真，则返回最后一个操作数。</p>
-
-<p>该特性可用于取代if进行流程控制，非常优雅</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">// 当foo的值为真的时候执行doSomething来处理foo</span>
-</span><span class='line'><span class="nx">foo</span> <span class="o">&amp;&amp;</span> <span class="nx">doSomething</span><span class="p">(</span><span class="nx">foo</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// 如果baz为真，则把baz的值赋给bar</span>
-</span><span class='line'><span class="c1">// 否则bar的值为函数craetBar的返回值</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">bar</span> <span class="o">=</span> <span class="nx">baz</span> <span class="o">||</span> <span class="nx">createBar</span><span class="p">();</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-
-		
-		<a href="/blog/2012/06/05/jqueryxue-xi-bi-ji-zhi-javascriptji-chu-yu-fa-pian/" class="more-link">Read on &rarr;</a>
+<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
 	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-06-05T23:29:00+08:00" pubdate data-updated="true">Jun 5<span>th</span>, 2012</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/jquery/'>jQuery</a>, <a class='category' href='/blog/categories/学习笔记/'>学习笔记</a>
-
-
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
 </div>
-	
-		<span class="comments"><a href="/blog/2012/06/05/jqueryxue-xi-bi-ji-zhi-javascriptji-chu-yu-fa-pian//index.html#disqus_thread">Comments</a></span>
-	
-</div></article>
 
 
-    <article class="post">
-	<h1 class="title"><a href="/blog/2012/06/03/hello-world/">Hello World</a></h1>
-	<div class="entry-content">
-		<h2>我的第一篇博文</h2>
-
-<p>进行一些测试，熟悉一下MarkDown的语法</p>
-
-<h4>先来看段视频：</h4>
-
-<p><video width='640' height='320' preload='none' controls poster=' http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
-
-
-		
-		<a href="/blog/2012/06/03/hello-world/" class="more-link">Read on &rarr;</a>
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-06-03T11:32:00+08:00" pubdate data-updated="true">Jun 3<span>rd</span>, 2012</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/css3/'>CSS3</a>, <a class='category' href='/blog/categories/media-queries/'>Media Queries</a>, <a class='category' href='/blog/categories/sass/'>Sass</a>
-
-
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-	
-		<span class="comments"><a href="/blog/2012/06/03/hello-world//index.html#disqus_thread">Comments</a></span>
-	
-</div></article>
-
-<nav id="pagenavi">
-    
-    
-    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
-</nav></div>
+</section>
+</div>
 	<footer id="footer" class="inner">Copyright &copy; 2012
 
     子不语
@@ -834,7 +727,10 @@
       var disqus_shortname = '42thcoder';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://42thcoder.github.com/blog/2012/06/06/jqueryxue-xi-bi-ji-zhi-jqueryji-chu-pian/';
+        var disqus_url = 'http://42thcoder.github.com/blog/2012/06/06/jqueryxue-xi-bi-ji-zhi-jqueryji-chu-pian/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
