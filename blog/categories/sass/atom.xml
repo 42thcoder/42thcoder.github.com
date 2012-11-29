@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Sass | 不可知之地]]></title>
-  <link href="http://42thcoder.github.com/blog/categories/sass/atom.xml" rel="self"/>
-  <link href="http://42thcoder.github.com/"/>
-  <updated>2012-11-29T20:58:38+08:00</updated>
-  <id>http://42thcoder.github.com/</id>
+  <link href="http://oncoding.in/blog/categories/sass/atom.xml" rel="self"/>
+  <link href="http://oncoding.in/"/>
+  <updated>2012-11-29T21:17:29+08:00</updated>
+  <id>http://oncoding.in/</id>
   <author>
     <name><![CDATA[子不语]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://42thcoder.github.com/blog/2012/06/03/hello-world/"/>
+    <link href="http://oncoding.in/blog/2012/06/03/hello-world/"/>
     <updated>2012-06-03T11:32:00+08:00</updated>
-    <id>http://42thcoder.github.com/blog/2012/06/03/hello-world</id>
+    <id>http://oncoding.in/blog/2012/06/03/hello-world</id>
     <content type="html"><![CDATA[<h2>我的第一篇博文</h2>
 
 <p>进行一些测试，熟悉一下MarkDown的语法</p>
