@@ -31,6 +31,7 @@ $(function() {
     console.log('ready!');
 })
 ```
+<!-- more -->
 
 ``` js 指定某函数在页面加载完毕后执行
 function readyFn() {
