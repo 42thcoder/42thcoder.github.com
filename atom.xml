@@ -4,7 +4,7 @@
   <title><![CDATA[不可知之地]]></title>
   <link href="http://42thcoder.github.com/atom.xml" rel="self"/>
   <link href="http://42thcoder.github.com/"/>
-  <updated>2012-11-09T17:49:21+08:00</updated>
+  <updated>2012-11-29T20:58:38+08:00</updated>
   <id>http://42thcoder.github.com/</id>
   <author>
     <name><![CDATA[子不语]]></name>
@@ -49,6 +49,9 @@
 </span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;ready!&#39;</span><span class="p">);</span>
 </span><span class='line'><span class="p">})</span>
 </span></code></pre></td></tr></table></div></figure>
+
+
+<!-- more -->
 
 
 
