@@ -1,29 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://oncoding.in/blog/2012/06/03/hello-world/</loc>
-        <lastmod>2012-11-09T17:36:37+08:00</lastmod>
-    </url>
-    <url>
         <loc>
             http://oncoding.in/blog/2012/06/05/jqueryxue-xi-bi-ji-zhi-javascriptji-chu-yu-fa-pian/
         </loc>
-        <lastmod>2012-11-09T17:36:37+08:00</lastmod>
+        <lastmod>2012-12-01T21:28:16+08:00</lastmod>
     </url>
     <url>
         <loc>http://oncoding.in/blog/2012/06/06/jqueryxue-xi-bi-ji-zhi-jqueryji-chu-pian/</loc>
-        <lastmod>2012-11-29T20:58:07+08:00</lastmod>
+        <lastmod>2012-12-01T21:28:16+08:00</lastmod>
     </url>
     <url>
         <loc>http://oncoding.in/</loc>
-        <lastmod>2012-11-29T20:58:07+08:00</lastmod>
+        <lastmod>2012-12-01T21:28:16+08:00</lastmod>
     </url>
     <url>
         <loc>http://oncoding.in/blog/about/</loc>
-        <lastmod>2012-11-09T17:36:37+08:00</lastmod>
+        <lastmod>2012-12-01T21:28:16+08:00</lastmod>
     </url>
     <url>
         <loc>http://oncoding.in/blog/archives/</loc>
-        <lastmod>2012-11-29T20:58:07+08:00</lastmod>
+        <lastmod>2012-12-01T21:28:16+08:00</lastmod>
     </url>
 </urlset>
