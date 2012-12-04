@@ -240,6 +240,20 @@ $header-height: 30px;
 					border: 1px solid darken(#EF7522, 10%);
 				}
 			}
+			&.douban{
+				background: image-url('social/douban.png') center no-repeat #FFFFFF;
+				border: 1px solid #66CDAA;
+				&:hover{
+					border: 1px solid darken(#66CDAA, 10%);
+				}
+			}
+			&.weibo{
+				background: image-url('social/weibo.png') center no-repeat #FFFFFF;
+				border: 1px solid #66CDAA;
+				&:hover{
+					border: 1px solid darken(#66CDAA, 10%);
+				}
+			}
 		}
 	}
 }

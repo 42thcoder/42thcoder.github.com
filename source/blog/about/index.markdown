@@ -7,6 +7,9 @@ sharing: true
 footer: true
 ---
 
-软件工程在读，开源爱好者。
-
-伪Geek，伪文艺，其实我什么都不懂
+<div class="align-center">
+	<h2>我的豆瓣秀</h2>
+	<div>
+		<script type="text/javascript" src="http://www.douban.com/service/badge/oncoding/?show=collection&amp;select=favorite&amp;n=20&amp;columns=8&amp;picsize=medium&amp;cat=movie|book|music" ></script>
+	</div>
+</div>
