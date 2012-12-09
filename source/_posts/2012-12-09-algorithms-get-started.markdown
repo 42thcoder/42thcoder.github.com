@@ -7,9 +7,8 @@ categories:
 - 读书笔记
 - 算法
 - SSP
-
 keywords: 算法, 入门, 读书笔记, java
-description: 收到了来自SSP的《算法（第四版）》的中文版，大概介绍下自己的编程环境和读书计划。  
+description: 收到了来自SSP的《算法（第四版）》的中文版，大概介绍下自己的编程环境和读书计划.
 ---
 
 {% img /images/blog/algorithms.png %}
