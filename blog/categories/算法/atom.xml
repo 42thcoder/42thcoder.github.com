@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 算法 | 不可知之地]]></title>
+  <link href="http://oncoding.in/blog/categories/算法/atom.xml" rel="self"/>
+  <link href="http://oncoding.in/"/>
+  <updated>2012-12-09T16:28:01+08:00</updated>
+  <id>http://oncoding.in/</id>
+  <author>
+    <name><![CDATA[子不语]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[《算法》读书笔记之那就开始吧]]></title>
+    <link href="http://oncoding.in/blog/2012/12/09/algorithms-get-started/"/>
+    <updated>2012-12-09T15:22:00+08:00</updated>
+    <id>http://oncoding.in/blog/2012/12/09/algorithms-get-started</id>
+    <content type="html"><![CDATA[<p><img src="/images/blog/algorithms.png"></p>
+
+<p>刚刚收到了<a href="http://book.douban.com/subject/19952400/">《算法(第四版)》</a>中文版，谢谢<a href="https://github.com/JeffreyZhao/ssp">老赵和SSP</a>的资助。其实几个月以前就买了《算法（第四版）》的英文版，一方面事情多，另一方面高估了自己的英文阅读速度，以至于进度甚是缓慢。现在有了中文版，希望能在两个月以内把纠结了很久的算法入门搞定。</p>
+
+<!-- more -->
+
+
+<h2>环境搭建</h2>
+
+<h4>编程</h4>
+
+<p>《算法》一书中的所有算法都是基于Java的一个子集实现的，并没有使用太多的API；多数算法的代码也并不长，所以我觉得就没有必要使用IDE了。使用vim + javac足矣，正好也可以熟练一下vim的使用。本来想用Sublime Text的，结果这货在Ubuntu下不能输入中文，不给力啊。</p>
+
+<h4>博客</h4>
+
+<p>如你所见，我用基于Rails的Octopress在Github上了搭了这个博客:</p>
+
+<ul>
+<li>不限流量，速度尚可；</li>
+<li>贴代码很方便；</li>
+<li>支持Markdown（ReText还是很好用的）。</li>
+</ul>
+
+
+<h4>思维导图</h4>
+
+<p>一图胜千言，利用思维导图可以更好的书写读书笔记。Ubuntu下XMind表现十分出色。</p>
+
+<h2>进度安排</h2>
+
+<p>最近除了复习托福、准备APS审核，基本没有其他事情，应该可以专心看书。《算法》一书一共六章，25个小节，按两天一小节计算，大概需要两个月的时间。</p>
+
+<p>读书笔记方面，老赵要求最好能一周一篇。我觉得还是看阅读进度吧，开始几天可能多发一点，毕竟已经拿英文版读过一些了，后面进度或许有点慢，不过还是尽量保证一周一篇吧。</p>
+
+<p>- -EOF- -</p>
+]]></content>
+  </entry>
+  
+</feed>
