@@ -4,7 +4,7 @@
   <title><![CDATA[Category: SSP | 不可知之地]]></title>
   <link href="http://oncoding.in/blog/categories/ssp/atom.xml" rel="self"/>
   <link href="http://oncoding.in/"/>
-  <updated>2012-12-09T16:28:01+08:00</updated>
+  <updated>2012-12-09T20:56:51+08:00</updated>
   <id>http://oncoding.in/</id>
   <author>
     <name><![CDATA[子不语]]></name>
@@ -14,7 +14,139 @@
 
   
   <entry>
-    <title type="html"><![CDATA[《算法》读书笔记之那就开始吧]]></title>
+    <title type="html"><![CDATA[『算法』读书笔记之基础编程模型]]></title>
+    <link href="http://oncoding.in/blog/2012/12/09/algorithms-basic-programming-model/"/>
+    <updated>2012-12-09T18:35:00+08:00</updated>
+    <id>http://oncoding.in/blog/2012/12/09/algorithms-basic-programming-model</id>
+    <content type="html"><![CDATA[<p>这是学习《算法》1.1时所做的读书笔记，这一节简单介绍了本书所用到的基础编程模型 ，即Java语言的一个子集。</p>
+
+<h2>大纲</h2>
+
+<p>本节重要知识点如下所示。</p>
+
+<p><img src="/images/blog/basicProgrammingModel.png"></p>
+
+<!-- more -->
+
+
+<h2>代码实例</h2>
+
+<p>本小节简单实现了二分搜索，有递归和非递归两种实现方式。</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>递归实现二分搜索 (RecursionBinarySearch.java)</span> <a href='/downloads/code/ch01/RecursionBinarySearch.java'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nf">RecursionBinarySearch</span><span class="o">(){</span>
+</span><span class='line'>	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">rank</span><span class="o">(</span><span class="kt">int</span> <span class="n">key</span><span class="o">,</span> <span class="n">in</span><span class="o">[]</span> <span class="n">a</span><span class="o">){</span>
+</span><span class='line'>		<span class="kt">int</span> <span class="n">lo</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class='line'>		<span class="kt">int</span> <span class="n">hi</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class='line'>		
+</span><span class='line'>		<span class="k">while</span><span class="o">(</span><span class="n">lo</span> <span class="o">&lt;=</span> <span class="n">hi</span><span class="o">){</span>
+</span><span class='line'>			<span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="o">(</span><span class="n">hi</span> <span class="o">-</span> <span class="n">lo</span><span class="o">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span>
+</span><span class='line'>			
+</span><span class='line'>			<span class="k">if</span><span class="o">(</span><span class="n">key</span> <span class="o">&lt;</span> <span class="n">a</span><span class="o">[</span><span class="n">mid</span><span class="o">]){</span>
+</span><span class='line'>				<span class="n">hi</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class='line'>			<span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">key</span> <span class="o">&gt;</span> <span class="n">a</span><span class="o">[</span><span class="n">mid</span><span class="o">]){</span>
+</span><span class='line'>				<span class="n">lo</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class='line'>			<span class="o">}</span> <span class="k">else</span><span class="o">{</span>
+</span><span class='line'>				<span class="k">return</span> <span class="n">mid</span><span class="o">;</span>
+</span><span class='line'>			<span class="o">}</span>
+</span><span class='line'>		<span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>		<span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+</span><span class='line'>	<span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>普通方式实现二分搜索 (BinarySearch.java)</span> <a href='/downloads/code/ch01/BinarySearch.java'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BinarySearch</span><span class="o">{</span>
+</span><span class='line'>	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">rank</span><span class="o">(</span><span class="kt">int</span> <span class="n">key</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">a</span><span class="o">){</span>
+</span><span class='line'>		<span class="k">return</span> <span class="nf">ranke</span><span class="o">(</span><span class="n">key</span><span class="o">,</span> <span class="n">a</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">a</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">);</span>
+</span><span class='line'>	<span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>	<span class="kd">public</span> <span class="kt">int</span> <span class="kt">void</span> <span class="nf">rank</span><span class="o">(</span><span class="kt">int</span> <span class="n">key</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">lo</span><span class="o">,</span> <span class="kt">int</span> <span class="n">hi</span><span class="o">){</span>
+</span><span class='line'>		<span class="k">if</span><span class="o">(</span><span class="n">lo</span> <span class="o">&gt;</span> <span class="n">hi</span><span class="o">){</span>
+</span><span class='line'>			<span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+</span><span class='line'>		<span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>		<span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="o">(</span><span class="n">hi</span> <span class="o">-</span> <span class="n">lo</span><span class="o">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span>
+</span><span class='line'>		<span class="k">if</span><span class="o">(</span><span class="n">key</span> <span class="o">&lt;</span> <span class="n">a</span><span class="o">[</span><span class="n">mid</span><span class="o">]){</span>
+</span><span class='line'>			<span class="n">hi</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class='line'>			<span class="n">rank</span><span class="o">(</span><span class="n">key</span><span class="o">,</span> <span class="n">a</span><span class="o">,</span> <span class="n">lo</span><span class="o">,</span> <span class="n">hi</span><span class="o">);</span>
+</span><span class='line'>		<span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">key</span> <span class="o">&gt;</span> <span class="n">a</span><span class="o">[</span><span class="n">mid</span><span class="o">]){</span>
+</span><span class='line'>			<span class="n">lo</span> <span class="o">=</span>  <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class='line'>			<span class="n">rank</span><span class="o">(</span><span class="n">key</span><span class="o">,</span> <span class="n">a</span><span class="o">,</span> <span class="n">lo</span><span class="o">,</span> <span class="n">hi</span><span class="o">);</span>
+</span><span class='line'>		<span class="o">}</span> <span class="k">else</span><span class="o">{</span>
+</span><span class='line'>			<span class="k">return</span> <span class="n">mid</span><span class="o">;</span>
+</span><span class='line'>		<span class="o">}</span>
+</span><span class='line'>	<span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>练习</h2>
+
+<ol>
+<li>编写一段代码，讲一个正整数N用二进制表示并转换为一个String类型的值s。</li>
+</ol>
+
+
+<p>``` java
+public static String toBinaryString(int N){</p>
+
+<pre><code>String s = "";
+for(int n = N; n &gt; 0; n /= 2)
+    s = (n % 2) + s;
+</code></pre>
+
+<p>}
+```</p>
+
+<p>未完待续。。。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[『算法』读书笔记之那就开始吧]]></title>
     <link href="http://oncoding.in/blog/2012/12/09/algorithms-get-started/"/>
     <updated>2012-12-09T15:22:00+08:00</updated>
     <id>http://oncoding.in/blog/2012/12/09/algorithms-get-started</id>
