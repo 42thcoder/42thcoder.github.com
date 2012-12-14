@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 算法 | 不可知之地]]></title>
   <link href="http://oncoding.in/blog/categories/算法/atom.xml" rel="self"/>
   <link href="http://oncoding.in/"/>
-  <updated>2012-12-14T11:27:49+08:00</updated>
+  <updated>2012-12-14T11:33:26+08:00</updated>
   <id>http://oncoding.in/</id>
   <author>
     <name><![CDATA[子不语]]></name>
@@ -26,6 +26,9 @@
 
 <p><img src="/images/blog/dataAbstraction.png"></p>
 
+<!-- more -->
+
+
 <h4>重点</h4>
 
 <ul>
@@ -42,9 +45,6 @@
 <li>“内存管理”小节中所举的例子， “there is no longer a reference to the Date object that was created
 and used to initialize b.” 是否应该是a呢？</li>
 </ul>
-
-
-<!-- more -->
 
 
 <h2>代码实例</h2>
