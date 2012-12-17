@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "《算法》读书笔记之那就开始吧"
+title: "『算法』读书笔记之那就开始吧"
 date: 2012-12-09 15:22
 comments: true
 categories: 

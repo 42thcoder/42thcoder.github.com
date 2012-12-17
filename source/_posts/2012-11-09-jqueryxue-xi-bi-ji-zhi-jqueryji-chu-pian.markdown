@@ -5,7 +5,9 @@ date: 2012-06-06 18:09
 comments: true
 categories: 
 - jQuery
-- 学习笔记
+- 读书笔记
+keywords: jQuery, 读书笔记, 基础
+description: 通过阅读《jQuery基本原理》来了解jQuery时所做的读书笔记：只记重点，概括思想，以作备忘。
 ---
 
 jQuery是目前最实用的JavaScript库，号称前端开发的利器，能大大简化开发，很有必要学习。这篇文章，是我通过阅读《[jQuery基本原理](http://docs.huihoo.com/jquery/jquery-fundamentals/zh-cn/index.html)》来了解jQuery时所做的读书笔记：只记重点，概括思想，以作备忘。

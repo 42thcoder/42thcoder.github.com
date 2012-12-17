@@ -4,8 +4,10 @@ title: "jQuery学习笔记之JavaScript基础语法篇"
 date: 2012-06-05 23:29
 comments: true
 categories: 
-- 学习笔记
+- 读书笔记
 - jQuery
+keywords: jQuery, 读书笔记, 基础
+description: 通过阅读《jQuery基本原理》来了解jQuery时所做的读书笔记：只记重点，概括思想，以作备忘。
 ---
 
 

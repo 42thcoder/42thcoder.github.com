@@ -102,7 +102,7 @@ disqus_short_name: 42thcoder
 disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-32535626-1
 
 # Facebook Like
 facebook_like: false
