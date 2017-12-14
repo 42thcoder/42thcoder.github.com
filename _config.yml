@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://blog.hackerzhang.com
+url: http://blog.hackerzhang.com
 date_format: "ordinal"
 title: 无题
 subtitle: "这个人很懒"
