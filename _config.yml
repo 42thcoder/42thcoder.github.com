@@ -93,7 +93,6 @@ ignore:
 # Extensions
 ## Themes: https://hexo.io/themes/
 theme: next
-scheme: Mist
 
 ## Plugins: https://hexo.io/plugins/
 # pjax: true
@@ -105,47 +104,3 @@ scheme: Mist
 deploy:
   type: git
   repo: https://github.com/42thcoder/42thcoder.github.com
-
-
-
-
-
-# filter_optimize:
-#   enable: true
-#   # remove the surrounding comments in each of the bundled files
-#   remove_comments: false
-#   css:
-#     # minify all css files
-#     minify: true
-#     # bundle loaded css files into one
-#     bundle: true
-#     # use a script block to load css elements dynamically
-#     delivery: true
-#     # make specific css content inline into the html page
-#     #   - only support the full path
-#     #   - default is ['css/main.css']
-#     inlines:
-#     excludes:
-#   js:
-#     # minify all js files
-#     minify: true
-#     # bundle loaded js files into one
-#     bundle: true
-#     excludes:
-#   # set the priority of this plugin,
-#   # lower means it will be executed first, default of Hexo is 10
-#   priority: 12
-
-
-# https://github.com/jiangtj-lab/hexo-cake-moon-menu
-moon_menu:
-  back2top:
-    enable: true
-    icon: fas fa-chevron-up
-    func: back2top
-    order: -1
-  back2bottom:
-    enable: true
-    icon: fas fa-chevron-down
-    func: back2bottom
-    order: -2
