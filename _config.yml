@@ -103,7 +103,8 @@ scheme: Mist
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/42thcoder/42thcoder.github.com
 
 
 
