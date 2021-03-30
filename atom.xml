@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.hackerzhang.com</id>
     <title>HackZhang&apos;s Blog</title>
-    <updated>2021-03-30T05:51:15.731Z</updated>
+    <updated>2021-03-30T06:02:28.096Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.hackerzhang.com"/>
     <link rel="self" href="https://blog.hackerzhang.com/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://blog.hackerzhang.com/images/avatar.png</logo>
     <icon>https://blog.hackerzhang.com/favicon.ico</icon>
     <rights>All rights reserved 2021, HackZhang&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[RocketMQ 如何保障高可用]]></title>
+        <id>https://blog.hackerzhang.com/post/rocketmq-ru-he-bao-zhang-gao-ke-yong/</id>
+        <link href="https://blog.hackerzhang.com/post/rocketmq-ru-he-bao-zhang-gao-ke-yong/">
+        </link>
+        <updated>2021-03-30T05:53:18.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="实践">实践</h1>
+<p>官方提供了 Docker 镜像, 本地可以很方便地运行一个集群.</p>
+<pre><code>git clone https://github.com/apache/rocketmq-docker.git
+</code></pre>
+<p>开发者有两个选择, 自己编译镜像或者使用官方提供的, 我们直接使用官方的就好.</p>
+<pre><code>sh stage.sh 4.5.0 # 选择一个版本号
+cd stages/4.5.0 
+./play-docker-compose.sh
+</code></pre>
+<p><code>docker ps -a</code> 看一下, 默认会启动一个两个 Broker 和一个 NameServer</p>
+<figure data-type="image" tabindex="1"><img src="https://blog.hackerzhang.com/post-images/1617084097634.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://blog.hackerzhang.com/post/hello-gridea/</id>
