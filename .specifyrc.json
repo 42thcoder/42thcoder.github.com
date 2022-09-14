@@ -1,0 +1,114 @@
+{
+  "repository": "@hacker/moon",
+  "head": "specify",
+  "base": "master",
+  "rules": [
+    {
+      "name": "Design Tokens / Theme",
+      "path": "./output/theme.js",
+      "filter": {
+        "types": [
+          "color",
+          "textStyle",
+          "font"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "to-tailwind",
+          "options": {
+            "formatName": "camelCase",
+            "formatConfig": {
+              "objectName": "extend",
+              "module": "commonjs"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / CSS font imports",
+      "path": "./output/styles/fonts.css",
+      "filter": {
+        "types": [
+          "font"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "to-css-font-import",
+          "options": {
+            "formats": [
+              "woff",
+              "woff2"
+            ],
+            "fontsPath": "../assets/fonts"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Export fonts",
+      "path": "./output/assets/fonts",
+      "filter": {
+        "types": [
+          "font"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "convert-font",
+          "options": {
+            "formats": [
+              "woff",
+              "woff2"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Vector",
+      "path": "./output/assets/vectors",
+      "filter": {
+        "types": [
+          "vector"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "kebabcasify"
+        },
+        {
+          "name": "svgo",
+          "options": {
+            "svgo": {
+              "js2svg": {
+                "pretty": true
+              },
+              "plugins": [
+                {
+                  "removeDimensions": true
+                },
+                {
+                  "removeAttrs": {
+                    "attrs": "*:(fill|stroke)"
+                  }
+                },
+                {
+                  "addAttributesToSVGElement": {
+                    "attributes": [
+                      "width=\"1em\"",
+                      "height=\"1em\"",
+                      "focusable=\"false\""
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
